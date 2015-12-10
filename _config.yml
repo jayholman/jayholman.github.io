@@ -1,12 +1,12 @@
 # Site settings
 title: Jay Holman
-email: brickfort2013@gmail.com
+email:
 description: > # this means to ignore newlines until "baseurl:"
-  An TOTALLY AWESOME DESCRIPTION.
+  Adventure, coupled with Adventure, and then a little dash more of Adventure.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://jayholman.xyz" # the base hostname & protocol for your site
-twitter_username: brickfort
-github_username:  jayholman
+twitter_username:
+github_username:
 
 # Build settings
 markdown: kramdown
