@@ -311,6 +311,15 @@ pre {
         font-size: 18px; } }
 
 /**
+ * Home Index
+ */
+.welcome {
+  text-align: center; }
+
+#welcomeVideo {
+  margin-bottom: 10px; }
+
+/**
  * Syntax highlighting styles
  */
 .highlight {

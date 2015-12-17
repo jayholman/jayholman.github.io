@@ -3,23 +3,14 @@ layout: default
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-
-        <span class="post-meta">{{post.video}}</span>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  <div class="welcome">
+    <h1>Welcome to JayHolman.xyz</h1>
+  </div>
+  <div id="welcomeVideo">
+    <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_c9xzvaju1j videoFoam=true autoPlay=false" style="height:100%;width:100%">&nbsp;</div></div></div>
+  </div>
+  <div id="welcomeParagraph">
+    <p>
+      I am still working on building this site out, for now I am still doing lots of tests on various things. I will be building it out in the future and adding some adventure posts. In the meantime, enjoy some first-person windows into some of my mountain biking and snow adventures. More posts and pages to come in the future. You can see all the posts housed in their categories above.</p>
+  </div>
 </div>
