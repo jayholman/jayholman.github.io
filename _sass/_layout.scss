@@ -243,10 +243,7 @@
   margin-bottom: 10px;
 }
 #welcomeParagraph{
-  padding: 15px 100px 0 100px;
-  text-align: center;
-
-  @include media-query($on-palm) {
-    margin: 15px 0;
-  }
-}
+  width: 80%;
+  padding-top: 15px;
+  margin: 0 auto;
+  text-align: center;}

@@ -320,7 +320,9 @@ pre {
   margin-bottom: 10px; }
 
 #welcomeParagraph {
-  padding: 15px 100px 0 100px;
+  width: 80%;
+  padding-top: 15px;
+  margin: 0 auto;
   text-align: center; }
 
 /**
