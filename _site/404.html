@@ -75,7 +75,7 @@
   <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
   <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
     <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-      <div class="wistia_embed wistia_async_gfuatj161x videoFoam=true autoPlay=true volume=0 endVideoBehavior=default playbar=false playButton=false smallPlayButton=false fullscreenButton=false volumeControl=false" style="height:100%;width:100%">&nbsp;</div>
+      <div class="wistia_embed wistia_async_gfuatj161x videoFoam=true autoPlay=true volume=0 playbar=false playButton=false smallPlayButton=false fullscreenButton=false volumeControl=false" style="height:100%;width:100%">&nbsp;</div>
     </div>
   </div>
   <script>
@@ -85,6 +85,10 @@
         video.bind('play', function() {
           video.time(9);
           return video.unbind;
+        });
+        video.bind("end", function() {
+            video.play();
+            video.time(9);
         });
       }
     });

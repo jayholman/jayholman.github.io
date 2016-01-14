@@ -4,7 +4,7 @@ title:  "Down the Bear's Trail"
 date:   2015-12-10 17:35:06
 categories: mtb
 author: Jay Holman
-thumbnail: <a href="http://jayholman.xyz/mtb/2015/12/10/first-post.html"><img src="https://embed-ssl.wistia.com/deliveries/323872382ea466eaaca4f21bbda937dad7cbcf9d.jpg?image_play_button=true&image_play_button_color=7b796ae0&image_crop_resized=450x253" alt="Down the Bear" width="75%" height="75%" /></a>
+thumbnail: <img src="https://embed-ssl.wistia.com/deliveries/323872382ea466eaaca4f21bbda937dad7cbcf9d.jpg?image_play_button=true&image_play_button_color=7b796ae0&image_crop_resized=450x253" alt="Down the Bear" width="75%" height="75%" /></a>
 ---
 For the first video in the mountain biking I'm adding a descent down the Bear's Trail. It was the first downhill trail and I experienced and it's still fun to this day.
 
