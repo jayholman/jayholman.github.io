@@ -326,6 +326,56 @@ pre {
   text-align: center; }
 
 /**
+  * Home Background Video
+*/
+.welcomev2 {
+  font-weight: bolder;
+  text-align: center;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: 10% auto 0 auto;
+  z-index: 1; }
+
+.welcomev2 h1 {
+  font-weight: 300;
+  font-size: 56px; }
+
+#welcomeButtons {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 30%;
+  bottom: 0;
+  margin: 5% auto 0 auto;
+  z-index: 2;
+  text-align: center; }
+
+#welcomeButtons li {
+  list-style: none;
+  display: block;
+  margin-top: 2%; }
+
+#welcomeButtons li a {
+  color: #111;
+  font-size: 24px;
+  font-weight: 400; }
+
+@media screen and (max-width: 600px) {
+  .welcomev2 h1 {
+    font-size: 28px; }
+
+  .welcomev2 {
+    top: 5%; }
+
+  #welcomeButtons {
+    top: 20%; }
+
+  #welcomeButtons li a {
+    font-size: 18px; } }
+/**
  * Syntax highlighting styles
  */
 .highlight {

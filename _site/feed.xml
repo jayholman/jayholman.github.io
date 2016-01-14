@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jay Holman</title>
-    <description>Adventure, coupled with Adventure, and then a little dash more of Adventure.
+    <description>Jay Holman&#39;s adventure and testing site.
 </description>
     <link>http://jayholman.xyz/</link>
     <atom:link href="http://jayholman.xyz/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 14 Jan 2016 14:47:34 -0500</pubDate>
-    <lastBuildDate>Thu, 14 Jan 2016 14:47:34 -0500</lastBuildDate>
+    <pubDate>Thu, 14 Jan 2016 17:41:21 -0500</pubDate>
+    <lastBuildDate>Thu, 14 Jan 2016 17:41:21 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
