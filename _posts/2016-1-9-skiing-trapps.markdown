@@ -4,7 +4,7 @@ title:  "Skiing Trapps"
 date:   2016-1-9 11:54:42
 categories: snow
 author: Jay Holman
-thumbnail: <img src="https://embed-ssl.wistia.com/deliveries/107cf2d5ae50476d49d9ee3caf60b655539e91fd.jpg?image_play_button=true&image_play_button_color=7790f9e0&image_crop_resized=450x253" alt="Time Lapse XC" width="75%" height="75%" /></a>
+thumbnail: <img src="https://embed-ssl.wistia.com/deliveries/107cf2d5ae50476d49d9ee3caf60b655539e91fd.jpg?image_play_button=true&image_play_button_color=7790f9e0&image_crop_resized=450x253" alt="Time Lapse XC" width="100%" height="100%" /></a>
 ---
 <h1>The Time Lapse Adventure</h1>
 Traveling to Vermont over New Years we celebrated the transition form 2015-2016 with two separate trips up Round Top at the Trapp Family Lodge. Below is a compilation of all the time lapses I took during both days of adventure.
