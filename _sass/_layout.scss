@@ -247,9 +247,21 @@
   padding-top: 15px;
   margin: 0 auto;
   text-align: center;}
+  /**
+    * Home Background Color
+  */
+  #homeBody{
+    background-color: $background-highlight;
+  }
 /**
   * Home Background Video
 */
+#welcomeBackVideo{
+  margin-top:-1px;
+  position:fixed;
+  width:100%;
+}
+
 .welcomev2{
   font-weight:  bolder;
   text-align: center;
@@ -286,14 +298,18 @@
   font-weight: 400;
 }
 @include media-query($on-palm) {
+  #homeBody{
+    background-color: #ffffff;
+  }
   .welcomev2 h1{
     font-size: 28px;
   }
   .welcomev2{
-    top: 5%;
+    top: 10%;
+    position: static;
   }
   #welcomeButtons{
-    top: 20%;
+    position: static;
   }
   #welcomeButtons li a{
     font-size: 18px;
