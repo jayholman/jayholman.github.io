@@ -283,7 +283,6 @@
   left: 0;
   top: 30%;
   bottom: 0;
-  margin: 5% auto 0 auto;
   z-index: 2;
   text-align: center;
   }
@@ -297,21 +296,23 @@
   font-size: 24px;
   font-weight: 400;
 }
-@include media-query($on-palm) {
+@include media-query($on-laptop) {
   #homeBody{
     background-color: #ffffff;
   }
   .welcomev2 h1{
     font-size: 28px;
   }
-  .welcomev2{
-    top: 10%;
-    position: static;
-  }
-  #welcomeButtons{
-    position: static;
-  }
   #welcomeButtons li a{
     font-size: 18px;
+  }
+  #welcomeButtons{
+    position: relative;
+    margin-top: 2%;
+    margin-left: 0%;
+  }
+  .welcomev2{
+    margin-top: 5%;
+    position:relative;
   }
 }

@@ -74,14 +74,17 @@
     <li><a href="/snow/">Play in the Snow</a></li>
     <li><a href="/mtb/">Ride a Bike</a></li>
     <li><a href="/boston/">Stick to the City</a></li>
+    <li id='adventuremode'><a href="?adventuremode">This is lame, let's make it more fun!</a></li>
   </ul>
 </div>
 <div id="welcomeBackVideo">
-<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_o3krryh87x videoFoam=true volume=0 playbar=false playButton=false smallPlayButton=false fullscreenButton=false volumeControl=false autoPlay=true videoQuality=hd-only" style="height:100%;width:100%">&nbsp;</div></div></div>
+<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_o3krryh87x videoFoam=true volume=0 playbar=false playButton=false smallPlayButton=false fullscreenButton=false volumeControl=false autoPlay=false videoQuality=hd-only" style="height:100%;width:100%">&nbsp;</div></div></div>
 <script>
   window._wq = window._wq || [];
   _wq.push({
     "o3krryh87x": function(video) {
+      if (/adventuremode/.test(location.href)) {
+      video.play();
       video.bind('play', function() {
         video.playbackRate(1.5);
         return video.unbind;
@@ -89,6 +92,7 @@
       video.bind("crosstime", 252, function() {
           video.time(0);
       });
+    }
     }
   });
 </script>
