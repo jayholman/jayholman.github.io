@@ -49,6 +49,7 @@
         border: 1px solid $grey-color-light;
         border-radius: 5px;
         text-align: right;
+        z-index: 100;
 
         .menu-icon {
             display: block;
@@ -59,9 +60,11 @@
             padding-top: 10px;
             text-align: center;
 
+
             > svg {
                 width: 18px;
                 height: 15px;
+
 
                 path {
                     fill: $grey-color-dark;
@@ -71,11 +74,13 @@
         .trigger {
             clear: both;
             display: none;
+
         }
 
         &:hover .trigger {
             display: block;
             padding-bottom: 5px;
+              z-index: 100;
         }
 
         .page-link {

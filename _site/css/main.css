@@ -179,7 +179,8 @@ pre {
       background-color: #fdfdfd;
       border: 1px solid #e8e8e8;
       border-radius: 5px;
-      text-align: right; }
+      text-align: right;
+      z-index: 100; }
       .site-nav .menu-icon {
         display: block;
         float: right;
@@ -198,7 +199,8 @@ pre {
         display: none; }
       .site-nav:hover .trigger {
         display: block;
-        padding-bottom: 5px; }
+        padding-bottom: 5px;
+        z-index: 100; }
       .site-nav .page-link {
         display: block;
         padding: 5px 10px; } }
