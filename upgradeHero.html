@@ -1,0 +1,57 @@
+<h1>Welcome to Upgrade Hero 2000</h1>
+<h2>Hey there champ, so you want to do some upgrades.....</h2>
+<p>How long were they on their old plan?</p>
+<input type="number" id="oldTime"></input>
+<p>How much did their old plan cost?</p>
+<input type="number" id="oldCost"></input>
+<p>How much does their new plan cost?</p>
+<input type="number" id="newCost"></input>
+</br>
+</br>
+<button onclick="calculate()">Calculate Upgrade</button>
+
+<h4>Here's a list of calculated upgrades</h4>
+<ol id="upgradeList">
+  <li>This isn't real (don't tell anyone!)</li>
+</ol>
+
+<script>
+var upgradeCalculator = function(oldTime, oldCost, newCost) {
+    // //turn everything into an integer?
+    // var oldTime = parseInt(oldTime);
+    // var oldCost = parseInt(oldCost);
+    // var newCost = parseInt(newCost);
+    // Calculate how many days they have on fancy new plan
+    console.log(oldTime);
+    console.log(oldCost);
+    console.log(newCost);
+    var daysOnNewPlan = 30 - oldTime;
+    // Calculate how much each day on a plan costs
+    var dailyOldCost = oldCost / 30;
+    var dailyNewCost = newCost / 30;
+    // How much have they should have paid and how much they would owe
+    var theyPaid = dailyOldCost * oldTime;
+    var theyWouldOwe = dailyNewCost * daysOnNewPlan;
+    //  Subtract what they should have paid from what they did, then apply it to what they owe
+    var alreadyPaidTowardsNew = oldCost - theyPaid;
+    var theyActuallyOwe = theyWouldOwe - alreadyPaidTowardsNew;
+
+    return theyActuallyOwe;
+    console.log(theyActuallyOwe);
+};
+var calculate = function(){
+  var oldTime = document.getElementById("oldTime").value;
+  var oldCost = document.getElementById("oldCost").value;
+  var newCost = document.getElementById("newCost").value;
+
+  var list = document.getElementById('upgradeList');
+
+  var upgrade = upgradeCalculator(oldTime, oldCost, newCost);
+
+  upgrade.toString()
+
+  var entry = document.createElement('li');
+  entry.appendChild(document.createTextNode(upgrade));
+  list.appendChild(entry);
+}
+</script>
