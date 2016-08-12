@@ -1,11 +1,16 @@
 <h1>Welcome to Upgrade Hero 2000</h1>
 <h2>Hey there champ, so you want to do some upgrades.....</h2>
 <p>How long were they on their old plan?</p>
+<p>As in, the number of days that they were on the old plan.</p>
+<p>Also as in, how many days has it been since their last billing date.</p>
 <input type="number" id="oldTime"></input>
 <p>How much did their old plan cost?</p>
 <input type="number" id="oldCost"></input>
 <p>How much does their new plan cost?</p>
 <input type="number" id="newCost"></input>
+<p>What's the name on the account?</p>
+<p>Really, how do you want the number labeled...</p>
+<input type="text" id="label"></input>
 </br>
 </br>
 <button onclick="calculate()">Calculate Upgrade</button>
@@ -36,19 +41,24 @@ var upgradeCalculator = function(oldTime, oldCost, newCost) {
     var alreadyPaidTowardsNew = oldCost - theyPaid;
     var theyActuallyOwe = theyWouldOwe - alreadyPaidTowardsNew;
 
+    //Rounding!
+    theyActuallyOwe = Math.round(theyActuallyOwe * 100) / 100;
+  console.log(theyActuallyOwe);
     return theyActuallyOwe;
-    console.log(theyActuallyOwe);
 };
 var calculate = function(){
   var oldTime = document.getElementById("oldTime").value;
   var oldCost = document.getElementById("oldCost").value;
   var newCost = document.getElementById("newCost").value;
+  var label = document.getElementById("label").value;
 
   var list = document.getElementById('upgradeList');
 
   var upgrade = upgradeCalculator(oldTime, oldCost, newCost);
 
   upgrade.toString()
+
+  upgrade = label + " owe's $" + upgrade
 
   var entry = document.createElement('li');
   entry.appendChild(document.createTextNode(upgrade));
