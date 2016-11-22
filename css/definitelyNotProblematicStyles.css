@@ -557,7 +557,7 @@ h1, h2, h3, h4, .seo_faq { color: #363945; font-family: "Whitney A", "Whitney B"
 .customize_menu { padding: 4px 5px; font-family: "Overpass", Helvetica, Arial, sans-serif; margin: 0px 2px; font-size: 18px; -webkit-font-smoothing: antialiased; white-space: nowrap; }
 
 input[type="text"] {
-  display: block;
+  display: block !important;
 }
 
 .customize--appearance { color: #ff8c6a; }
